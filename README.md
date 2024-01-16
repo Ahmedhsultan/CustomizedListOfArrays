@@ -29,10 +29,10 @@ The Test to Fetch the item at index 20 million:
 The performance test results are as follows:
 
 - **LinkedList Implementation:**
-    - **Duration in second:** PT3.678849S
+    - **Duration in second:** 3.678849 S
 
 - **CustomizedListOfArrays Implementation:**
-    - **Duration in second:** PT0.052341S
+    - **Duration in second:** 0.052341 S
 
 ### LinkedList Implementation
 
