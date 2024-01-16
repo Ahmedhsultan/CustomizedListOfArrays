@@ -25,15 +25,14 @@ To run the performance test, execute the `Main` class. The test involves populat
 
 ### Performance Test
 
+The Test to Fetch the item at index 20 million:  
 The performance test results are as follows:
 
 - **LinkedList Implementation:**
     - **Duration:** PT3.678849S
-    - **Fetch Operation:** Fetches the item at index 20 million from a `LinkedList`.
 
 - **ListOfArrays Implementation:**
     - **Duration:** PT0.052341S
-    - **Fetch Operation:** Fetches the item at index 20 million from a `ListOfArrays`.
 
 ### LinkedList Implementation
 
