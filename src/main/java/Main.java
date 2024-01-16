@@ -1,4 +1,4 @@
-import com.sultan.dataStructure.ListOfArrays;
+import com.sultan.dataStructure.CustomizedListOfArrays;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
@@ -27,23 +27,23 @@ public class Main {
         }
 
 
-        //Fetch item using datastructure ListOfArrays
+        //Fetch item using datastructure CustomizedListOfArrays
         {
-            ListOfArrays<String> listOfArrays = new ListOfArrays<>(1000);
+            CustomizedListOfArrays<String> customizedListOfArrays = new CustomizedListOfArrays<>(1000);
 
             //Populate data
             for (int i = 0; i < 4_000_000_0; i++) {
-                listOfArrays.addItem("Hi test number: " + i);
+                customizedListOfArrays.addItem("Hi test number: " + i);
             }
 
             //Fetch item number 2_000_000_0 and  calc the duration
             var startTime = LocalDateTime.now();
-            listOfArrays.getItem(2_000_000_0);
+            customizedListOfArrays.getItem(2_000_000_0);
             var endTime = LocalDateTime.now();
             Duration duration = Duration.between(startTime, endTime);
 
             //Print the  duration to get item in second
-            System.out.println("ListOfArray takes in second: " + duration);
+            System.out.println("CustomizedListOfArrays takes in second: " + duration);
         }
     }
 }

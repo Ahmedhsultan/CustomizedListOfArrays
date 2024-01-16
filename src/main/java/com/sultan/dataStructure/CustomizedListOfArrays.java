@@ -6,12 +6,12 @@ import java.util.LinkedList;
  * ListOfArrays is datastructue that link between sets of arrays
  * @param <T>
  */
-public final class ListOfArrays <T extends Object> extends LinkedList<Node<T>[]>{
+public final class CustomizedListOfArrays<T extends Object> extends LinkedList<Node<T>[]>{
     private int loadingFactor;
     private int currentLocalIndex;
     private int currenGlobalIndex;
 
-    public ListOfArrays(int loadingFactor){
+    public CustomizedListOfArrays(int loadingFactor){
         this.loadingFactor = loadingFactor;
         this.addNewArrayToRepository(loadingFactor);
         this.currenGlobalIndex = -1;

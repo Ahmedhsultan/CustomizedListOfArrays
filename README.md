@@ -1,23 +1,23 @@
 # Project README
 
-## LinkedList vs. ListOfArrays Performance Test
+## LinkedList vs. CustomizedListOfArrays Performance Test
 
-This project compares the performance of two data structures, `LinkedList` and `ListOfArrays`, in fetching an item at a specific index. The goal is to analyze the efficiency of these data structures when dealing with a large number of elements.
+This project compares the performance of two data structures, `LinkedList` and `CustomizedListOfArrays`, in fetching an item at a specific index. The goal is to analyze the efficiency of these data structures when dealing with a large number of elements.
 
 ### Table of Contents
 
 - [Overview](#overview)
 - [Usage](#usage)
 - [Performance Test](#performance-test)
-- [List Implementation](#LinkedList-implementation)
-- [ListOfArrays Implementation](#listofarrays-implementation)
+- [List Implementation](#linkedlist-implementation)
+- [CustomizedListOfArrays Implementation](#customizedlistOfArrays-implementation)
 - [Conclusion](#conclusion)
 
 ### Overview
 
 The project contains two implementations for LinkedList :
 1. **LinkedList Implementation:** Uses `LinkedList` to store and retrieve items with the default implementation.
-2. **ListOfArrays Implementation:** Introduces a custom data structure, `ListOfArrays`, that links sets of arrays to optimize item retrieval.
+2. **CustomizedListOfArrays Implementation:** Introduces a custom data structure, `CustomizedListOfArrays`, that links sets of arrays to optimize item retrieval.
 
 ### Usage
 
@@ -31,20 +31,20 @@ The performance test results are as follows:
 - **LinkedList Implementation:**
     - **Duration:** PT3.678849S
 
-- **ListOfArrays Implementation:**
+- **CustomizedListOfArrays Implementation:**
     - **Duration:** PT0.052341S
 
 ### LinkedList Implementation
 
 Has implemented with the  default implementation of LinkedList
 
-### ListOfArrays Implementation
+### CustomizedListOfArrays Implementation
 
 Implemented to compile both implementation of Arrays and LinkedList to get advantage of fast random accesses and the ability of increasing the list length or capacity
 
 So How we did this:
 
-The ListOfArrays structure is initialized with a specified loading factor, which determines the capacity of each internal array within the list.
+The CustomizedListOfArrays structure is initialized with a specified loading factor, which determines the capacity of each internal array within the list.
 
 Each array linked to the next array by the end of the array
 
@@ -58,4 +58,4 @@ The project aims to provide insights into the performance differences between th
 
 Feel free to explore and modify the code to suit your needs. If you have any questions or suggestions, please don't hesitate to reach out. Happy coding!
 
-### `The Result : ListOfArrays was faster than LinkedList by 74.67 times faster`
+### `The Result : CustomizedListOfArrays was faster than LinkedList by 74.67 times faster`
