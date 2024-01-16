@@ -54,7 +54,7 @@ Each array linked to the next array by the end of the array
   
 ### Conclusion
 
-The project aims to provide insights into the performance differences between the standard `LinkedList` and the custom `ListOfArrays` data structure. Developers can use this information to make informed decisions based on their specific use cases and performance requirements.
+The project aims to provide insights into the performance differences between the standard `LinkedList` and the custom `CustomizedListOfArrays` data structure. Developers can use this information to make informed decisions based on their specific use cases and performance requirements.
 
 Feel free to explore and modify the code to suit your needs. If you have any questions or suggestions, please don't hesitate to reach out. Happy coding!
 
