@@ -28,11 +28,11 @@ To run the performance test, execute the `Main` class. The test involves populat
 The performance test results are as follows:
 
 - **LinkedList Implementation:**
-    - **Duration:** PT1.31809S
+    - **Duration:** PT3.678849S
     - **Fetch Operation:** Fetches the item at index 20 million from a `LinkedList`.
 
 - **ListOfArrays Implementation:**
-    - **Duration:** PT0.016545S
+    - **Duration:** PT0.052341S
     - **Fetch Operation:** Fetches the item at index 20 million from a `ListOfArrays`.
 
 ### LinkedList Implementation
@@ -59,4 +59,4 @@ The project aims to provide insights into the performance differences between th
 
 Feel free to explore and modify the code to suit your needs. If you have any questions or suggestions, please don't hesitate to reach out. Happy coding!
 
-### `The Result : ListOfArrays was faster than LinkedList by 79.67 times faster`
+### `The Result : ListOfArrays was faster than LinkedList by 74.67 times faster`
