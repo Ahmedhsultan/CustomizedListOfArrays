@@ -54,8 +54,7 @@ Each array linked to the next array by the end of the array
   
 ### Conclusion
 
-The project aims to provide insights into the performance differences between the standard `LinkedList` and the custom `CustomizedListOfArrays` data structure. Developers can use this information to make informed decisions based on their specific use cases and performance requirements.
+In the realm of Object-Oriented Programming (OOP), the "Open/Closed" principle stands as a potent guideline. This principle advocates for code to be open for extension while closed for modification. By embracing this principle, we gain the ability to tailor various elements, including data structures, to align seamlessly with our unique use cases. The introduction of the CustomizedListOfArrays represents a swift application of this principle, and there exists a multitude of ideas for further enhancements that can expedite operations such as fetching, adding, sorting, and more, making it an agile and adaptable solution.
+### `The Result : CustomizedListOfArrays was faster than LinkedList by 74.67 times faster`
 
 Feel free to explore and modify the code to suit your needs. If you have any questions or suggestions, please don't hesitate to reach out. Happy coding!
-
-### `The Result : CustomizedListOfArrays was faster than LinkedList by 74.67 times faster`
