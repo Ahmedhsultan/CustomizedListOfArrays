@@ -1,6 +1,6 @@
 # Project README
 
-## List vs. ListOfArrays Performance Test
+## LinkedList vs. ListOfArrays Performance Test
 
 This project compares the performance of two data structures, `LinkedList` and `ListOfArrays`, in fetching an item at a specific index. The goal is to analyze the efficiency of these data structures when dealing with a large number of elements.
 
@@ -9,40 +9,54 @@ This project compares the performance of two data structures, `LinkedList` and `
 - [Overview](#overview)
 - [Usage](#usage)
 - [Performance Test](#performance-test)
-- [List Implementation](#list-implementation)
+- [List Implementation](#LinkedList-implementation)
 - [ListOfArrays Implementation](#listofarrays-implementation)
 - [Conclusion](#conclusion)
 
 ### Overview
 
-The project contains two implementations in Java:
-1. **List Implementation:** Uses `LinkedList` to store and retrieve items.
+The project contains two implementations for LinkedList :
+1. **LinkedList Implementation:** Uses `LinkedList` to store and retrieve items with the default implementation.
 2. **ListOfArrays Implementation:** Introduces a custom data structure, `ListOfArrays`, that links sets of arrays to optimize item retrieval.
 
 ### Usage
 
-To run the performance test, execute the `Main` class. The test involves populating both data structures with 40 million elements and fetching the element at index 20 million.
+To run the performance test, execute the `Main` class. The test involves populating both data structures with 40 million elements and fetching the element at index 20 million and calculate the duration to find this item.
 
 ### Performance Test
 
-The performance test involves fetching an item at index 20 million from both data structures and measuring the time it takes for each operation. The results are printed to the console.
+The performance test results are as follows:
 
-### List Implementation
+- **LinkedList Implementation:**
+    - **Duration:** PT1.31809S
+    - **Fetch Operation:** Fetches the item at index 20 million from a `LinkedList`.
 
-- **Data Structure:** `LinkedList`
-- **Population:** Populates the list with 40 million elements.
-- **Fetch Operation:** Fetches the item at index 20 million.
-- **Duration Measurement:** Calculates and prints the duration of the fetch operation.
+- **ListOfArrays Implementation:**
+    - **Duration:** PT0.016545S
+    - **Fetch Operation:** Fetches the item at index 20 million from a `ListOfArrays`.
+
+### LinkedList Implementation
+
+Has implemented with the  default implementation of LinkedList
 
 ### ListOfArrays Implementation
 
-- **Data Structure:** `ListOfArrays`
-- **Population:** Populates the ListOfArrays with 40 million elements.
-- **Fetch Operation:** Fetches the item at index 20 million.
-- **Duration Measurement:** Calculates and prints the duration of the fetch operation.
+Implemented to compile both implementation of Arrays and LinkedList to get advantage of fast random accesses and the ability of increasing the list length or capacity
 
+So How we did this:
+
+The ListOfArrays structure is initialized with a specified loading factor, which determines the capacity of each internal array within the list.
+
+Each array linked to the next array by the end of the array
+
+00010001000 -> pointer to next array  
+01001000010 -> pointer to next array  
+00000000000
+  
 ### Conclusion
 
 The project aims to provide insights into the performance differences between the standard `LinkedList` and the custom `ListOfArrays` data structure. Developers can use this information to make informed decisions based on their specific use cases and performance requirements.
 
 Feel free to explore and modify the code to suit your needs. If you have any questions or suggestions, please don't hesitate to reach out. Happy coding!
+
+### `The Result : ListOfArrays was faster than LinkedList by 79.67 times faster`
